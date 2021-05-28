@@ -11,7 +11,6 @@ package classes;
  */
 import java.util.ArrayList;
 
-
 public class DaftarMenu {
     private ArrayList<Menu> daftarMenu;
     
