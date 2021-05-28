@@ -31,7 +31,8 @@ public class MainAplikasiKasir {
         
         System.out.println("\t \t \t");
         System.out.println("========= TRANSAKSI =========");
-   
+        do {
+            
             System.out.print("No. Transaksi: ");
             no_transaksi = input.nextLine();
             System.out.print("Pemesan: ");
@@ -128,8 +129,11 @@ public class MainAplikasiKasir {
                     break;
                 }
             } while(kembalian < 0);    
-            
-        System.out.println("========= TERIMA KASIH =========");
+            System.out.println("Lakukan Transaksi lagi? [Y/]");
+            transaksi_lagi = input.next();
+        } while (transaksi_lagi.equalsIgnoreCase("Y"));
+        
+            System.out.println("========= TERIMA KASIH =========");
     } 
     
     public double cekInputNumber(String label){
